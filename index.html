@@ -1,37 +1,518 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Drank by Glass Umbrella</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/cover.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body class="text-center">
-      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header class="masthead mb-auto"></header>
-  
-        <main role="main" class="inner cover">
-          <h1 class="cover-heading">Drank</h1>
-          <p class="lead">
-            <img src="images/drank.png" width="128">
-            <br>
-            Track your drinks with Drank
-          </p>
-          <p class="lead">
-            <a href="#">
-              <img src="images/download.svg" height="60">
-            </a>
-          </p>
-        </main>
-  
-        <footer class="mastfoot mt-auto">
-          <div class="inner">
-            <p>By <a href="http://glassumbrella.co">Glass Umbrella</a></p>
-          </div>
-        </footer>
-        
-      </div>
+<head>
+	<!-- Meta Data -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Drank</title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#454be5">
+	<meta name="msapplication-TileColor" content="#454be5">
+	<meta name="theme-color" content="#454be5">
+
+	<!-- Dependency Styles -->
+	<link rel="stylesheet" href="dependencies/bootstrap/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="dependencies/font-awesome/css/font-awesome.min.css" type="text/css">
+	<link rel="stylesheet" href="dependencies/components-elegant-icons/css/elegant-icons.min.css" type="text/css">
+	<link rel="stylesheet" href="dependencies/swiper/css/swiper.min.css" type="text/css">
+	<link rel="stylesheet" href="dependencies/simple-line-icons/css/simple-line-icons.css" type="text/css">
+	<link rel="stylesheet" href="dependencies/wow/css/animate.css" type="text/css">
+	<link rel="stylesheet" href="dependencies/slick-carousel/css/slick.css" type="text/css">
+	<link rel="stylesheet" href="dependencies/slick-carousel/css/slick.css" type="text/css">
+	<link rel="stylesheet" href="dependencies/magnific-popup/css/magnific-popup.css" type="text/css">
+
+	<!-- Site Stylesheet -->
+	<link rel="stylesheet" href="assets/css/app.css" type="text/css">
+
+	<!-- Google Web Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700%7CPoppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+
+</head>
+
+<body id="home-version-1" class="home-version-1" data-style="default">
+
+	<div class="page-loader">
+		<div id='preloader'>
+			<span>loading</span>
+			<div class='spinner'>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+			</div>
+			<div class='spinner'>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+			</div>
+			<div class='spinner'>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+			</div>
+			<div class='spinner'>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+			</div>
+			<div class='spinner'>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+			</div>
+			<div class='spinner'>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+			</div>
+			<div class='spinner'>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+				<div class='line'></div>
+			</div>
+		</div>
+	</div>
+	<!-- /.page-loader -->
+
+	<div id="site">
+
+
+		<!--=========================-->
+		<!--=        Navbar         =-->
+		<!--=========================-->
+		<header id="site-header">
+			<div class="header-main gp-header-sticky">
+				<div class="container">
+					<div class="header-inner clearfix">
+						<div class="site-logo">
+							<h1><a href="index.html" class="main-logo" style="color: white">Drank</a></h1>
+						</div>
+						<!-- /.site-logo -->
+
+						<div class="mob-menu-open toggle-menu">
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<span class="bar"></span>
+						</div>
+
+						<nav class="site-nav">
+							<ul class="site-menu" id="border-moving">
+								<li class="menu__item--current"><a href="#site" class="menu__link">Home</a></li>
+								<li><a href="#feature" class="menu__link">Features</a></li>
+                                <li><a href="#screenshorts">Screenshots</a></li>
+							</ul>
+							<a href="#download" class="nav-button">Download</a>
+						</nav>
+						<!-- /.site-nav -->
+					</div>
+					<!-- /.header-inner -->
+				</div>
+				<!-- /.container -->
+			</div>
+			<!-- /.header-main -->
+		</header>
+		<!-- /#site-header -->
+
+
+
+		<!--==============================-->
+		<!--=        Mobile Menu         =-->
+		<!--==============================-->
+		<div class="mobile-menu-inner">
+
+			<div class="mobile-nav-top-wrap">
+				<div class="mob-header-inner">
+
+					<div class="close-menu">
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+				</div>
+				<!-- /.mob-header-inner -->
+
+				<div class="close-menu">
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+			</div>
+			<!-- /.mobile-nav-top-wrap -->
+
+			<nav id="mobile-nav">
+				<ul class="mobile-menu">
+					<li class="current_page_item"><a href="#site">Home</a></li>
+					<li><a href="#feature">Features</a></li>
+					<li><a href="#download">Download</a></li>
+					<li><a href="#screenshorts">Screenshots</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- /.mobile-menu-inner -->
+
+
+
+		<!--==========================-->
+		<!--=        Banner          =-->
+		<!--==========================-->
+		<div id="site-banner">
+			<div class="bn-bg">
+				<img src="media/banner/c1.png" alt="bn bg" data-parallax='{"x" : 150, "y" : -150}'>
+				<img src="media/banner/c2.png" alt="bn bg" data-parallax='{"x" : 100, "y" : -100}'>
+				<img src="media/banner/c3.png" alt="bn bg" data-parallax='{"x" : 50, "y" : -50}'>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="banner-content">
+							<h2 class="title wow fadeInUp">Gain insights</h2>
+							<h2 class="title wow fadeInUp" data-wow-delay="0.3s">Drink better</h2>
+
+							<p class="sub-title wow fadeInUp" data-wow-delay="0.5s">
+								Drank gives you the power to understand what you're drinking to help you improve your habits.
+							</p>
+
+							<a href="#download" class="banner-btn wow fadeInUp" data-wow-delay="0.7s">Download</a>
+						</div>
+						<!-- /.banner-content -->
+					</div>
+					<!-- /.col-md-6 -->
+
+					<div class="col-md-5">
+						<div class="banner-mobile">
+							<div class="feature-image">
+								<img src="media/banner/main-screenshot.png" class="wow fadeInUp" alt="Mobile">
+							</div>
+
+							<ul class="scroll-animate header-bg">
+								<li><img src="media/bg/12.png" alt="line bg" data-parallax='{"x" : 100, "y" : -100}'></li>
+								<li><img src="media/bg/13.png" alt="line bg" data-parallax='{"y" : 30, "x" : -30}'></li>
+								<li><img src="media/bg/14.png" alt="line bg" data-parallax='{"y" : 100, "x" : -100}'></li>
+								<li><img src="media/bg/15.png" alt="line bg" data-parallax='{"x" : 30, "y" : -30}'></li>
+								<li><img src="media/bg/16.png" alt="line bg" data-parallax='{"y" : -100, "x" : 100}'></li>
+								<li><img src="media/bg/17.png" alt="line bg" data-parallax='{"y" : 100, "x" : -100}'></li>
+								<li><img src="media/bg/18.png" alt="line bg" data-parallax='{"y" : -100, "x" : 100}'></li>
+							</ul>
+						</div>
+						<!-- /.banner-mobile -->
+					</div>
+					<!-- /.col-md-6 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+
+
+			<img src="media/banner/b1.png" class="bottom-shape" alt="" data-parallax='{"y" : -50, "y" : 50}'>
+			<img src="media/banner/b2.png" class="bottom-shape-two" alt="" data-parallax='{"y" : -20, "y" : 20}'>
+
+		</div>
+		<!-- /#site-banner -->
+
+		<!--=========================-->
+		<!--=        Feature        =-->
+		<!--=========================-->
+		<section id="feature">
+			<div class="container">
+				<div class="section-title">
+					<h2 class="title wow fadeIn">Features</h2>
+				</div>
+				<!-- /.section-title -->
+
+				<div class="row">
+					<div class="col-lg-4 col-md-4">
+						<div class="feature-box-inner">
+							<div class="feature-box left-icon wow fadeInLeft" data-wow-delay="0.3s">
+								<div class="icon-container">
+									<i class="ei ei-icon_easel"></i>
+								</div>
+
+								<div class="content">
+									<h3>Record what you drink</h3>
+									<p>
+										Track everything that you drink including water, coffee, beers, and more.
+									</p>
+								</div>
+							</div>
+							<!-- /.feature-box -->
+
+							<div class="feature-box left-icon  wow fadeInLeft" data-wow-delay="0.5s">
+								<div class="icon-container">
+									<i class="ei ei-icon_lightbulb_alt"></i>
+								</div>
+
+								<div class="content">
+									<h3>Stay hydrated</h3>
+									<p>
+										Reminders to help keep on top of your hydration.
+									</p>
+								</div>
+							</div>
+							<!-- /.feature-box -->
+						</div>
+						<!-- /.feature-box-inner -->
+					</div>
+					<!-- /.col-lg-4 -->
+
+					<div class="col-lg-4 col-md-4">
+						<div class="feature-image text-center wow fadeIn" data-wow-delay="0.3s">
+							<img src="media/feature/feature-screenshot.png" alt="Feature">
+						</div>
+					</div>
+					<!-- /.col-lg-4 -->
+
+					<div class="col-lg-4 col-md-4">
+						<div class="feature-box-inner">
+							<div class="feature-box right-icon wow fadeInRight" data-wow-delay="0.3s">
+								<div class="icon-container ">
+									<i class="ei ei-icon_box-checked"></i>
+								</div>
+
+								<div class="content">
+									<h3>Cut back on the bad stuff</h3>
+									<p>
+										Discover just how much alcohol, caffeine, and sugar you drink.
+									</p>
+								</div>
+							</div>
+							<!-- /.feature-box -->
+
+							<div class="feature-box right-icon  wow fadeInRight" data-wow-delay="0.5s">
+								<div class="icon-container">
+									<i class="ei ei-icon_key_alt"></i>
+								</div>
+
+								<div class="content">
+									<h3>Sync securely with Apple Health</h3>
+									<p>
+										Share your data securely with Apple Health and other apps.
+									</p>
+								</div>
+							</div>
+							<!-- /.feature-box -->
+						</div>
+						<!-- /.feature-box-inner -->
+					</div>
+					<!-- /.col-lg-4 -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+
+			<ul class="animate-bg">
+				<li><img src="media/bg/1.png" alt="line bg" data-parallax='{"x" : 200, "y" : -200}'></li>
+				<li><img src="media/bg/3.png" alt="line bg" data-parallax='{"y" : 100, "x" : -100}'></li>
+				<li><img src="media/bg/4.png" alt="line bg" data-parallax='{"x" : 130, "y" : -130}'></li>
+				<li><img src="media/bg/5.png" alt="line bg" data-parallax='{"y" : 100, "x" : -100}'></li>
+			</ul>
+		</section>
+		<!-- /#feature -->
+
+		<!--==========================-->
+		<!--=        Download        =-->
+		<!--==========================-->
+		<section id="download">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="download-content">
+                                <h2 class="download-title">Get Drank</h2>
+    
+                                <p>
+                                    Availble on iOS, and coming soon for Android.
+                                </p>
+    
+                            </div>
+                            <!-- /.download-content -->
+                        </div>
+                        <div class="col-lg-6">
+                                <div class="store-btns" style="padding-top: 20px">
+                                    <a href="#" target="_blank" class="store-btn wow flipInX" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: flipInX;">
+                                        <i class="fi flaticon-apple-2"></i>
+                                        <div class="btn-text">
+                                            <span>Download On The</span>
+                                            App Store
+                                        </div>
+                                    </a>
+                                    <span class="store-btn wow flipInX" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: flipInX;">
+                                        <i class="fi flaticon-google-play-1"></i>
+                                        <div class="btn-text">
+                                            <span>Coming Soon To</span>
+                                            Google Play
+                                        </div>
+                                    </span>
+                                </div>
+                                <!-- /.store-btns -->
+                        </div>
+                        <!-- /.col-lg-6 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+                
+                
+    
+                <div class="wave-bg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" class="wave">
+                <title>Wave</title>
+                <defs></defs>
+                <path id="feel-the-wave"
+                d="M1920.000,58.998 L1920.000,164.998 L0.000,164.998 L0.000,119.999
+                C0.000,119.999 145.549,49.265 313.203,40.999 C525.449,30.533 672.724,94.775
+                866.895,101.761 C907.604,103.225 957.454,99.228 1007.943,88.724 C1145.929,60.014
+                1219.971,11.807 1403.910,2.999 C1450.093,0.787 1504.925,-13.381 1775.283,66.829
+                C1844.663,87.411 1920.000,58.998 1920.000,58.998 Z"/>
+            </svg>
+    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" class="wave">
+                <title>Wave</title>
+                <path id="wave-two"
+                d="M1093.910,5.685 C1317.402,-23.097 1421.263,80.301 1608.427,83.440
+                C1723.626,85.372 1799.711,52.828 1853.587,26.599 C1879.056,14.199
+                1920.000,11.439 1920.000,11.439 L1920.000,190.998 L0.000,190.998 L0.000,53.998
+                C0.000,53.998 27.746,55.576 50.698,61.929 C140.266,86.724 355.925,147.932
+                523.203,133.999 C648.841,123.533 727.916,98.315 790.555,81.220 C937.278,41.176
+                974.256,21.095 1093.910,5.685 Z"/>
+            </svg>
+                </div>
+            </section>
+            <!-- /#download -->
+
+		<!--=============================-->
+		<!--=        Screenshort        =-->
+		<!--=============================-->
+		<section id="screenshort">
+			<div class="container">
+				<div class="section-title">
+					<h2>Screenshots</h2>
+				</div>
+				<!-- /.section-title -->
+
+				<div class="screenshort">
+
+					<div class="swiper-container screenshort-slider wow fadeInUp" data-wow-delay="0.8s" data-swiper-config='{"loop": true, "speed": 700, "spaceBetween": 30, "autoplay": 33000, "pagination":"#screenshort-pagination", "slidesPerView": 4, "grabCursor": true, "paginationClickable": true, "breakpoints": { "992": { "slidesPerView": 2 }, "500": { "slidesPerView": 1 }}}'>
+
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="screenshort-thumb">
+									<img src="media/screenshort/iPhone8_Main.png" alt="screenshort Logo">
+
+									<a href="media/screenshort/iPhone8_Main.png" class="popup-btn"><i class="ei ei-icon_plus"></i></a>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="screenshort-thumb">
+									<img src="media/screenshort/iPhone8_Drinks.png" alt="screenshort thumb">
+									<a href="media/screenshort/iPhone8_Drinks.png" class="popup-btn"><i class="ei ei-icon_plus"></i></a>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="screenshort-thumb">
+									<img src="media/screenshort/iPhone8_History.png" alt="screenshort thumb">
+									<a href="media/screenshort/iPhone8_History.png" class="popup-btn"><i class="ei ei-icon_plus"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.swiper-pagination -->
+				</div>
+				<!-- /.screenshort -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /#screenshort -->
+
+		<!--========================-->
+		<!--=        Footer        =-->
+		<!--========================-->
+		<footer id="site-footer" class="site-footer">
+			<div class="container">
+				<div class="footer-inner">
+					<div class="row">
+						<div class="col-lg-4 col-md-9">
+							<div class="widget widget-menu">
+								<h3 class="widget-title">By <a href="https://glassumbrella.co">Glass Umbrella</a></h3>
+
+
+                                <ul class="footer-social-link">
+                                    <li><a href="https://twitter.com/thedrankapp"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="http://glassumbrella.co"><i class="fa fa-safari"></i></a></li>
+                                </ul>
+								<ul class="footer-menu">
+									<li><a href="/privacy">Privacy Policy</a></li>
+								</ul>
+							</div>
+							<!-- /.widget widget-menu -->
+
+						</div>
+						<!-- /.col-lg-2 -->
+						<!-- /.col-lg-3 -->
+					</div>
+					<!-- /.row -->
+				</div>
+				<!-- /.footer-inner -->
+				<!-- /.site-info -->
+			</div>
+			<!-- /.container -->
+		</footer>
+		<!-- /#site-footer -->
+
+
+	</div>
+	<!-- /#site -->
+
+	<!-- Dependency Scripts -->
+	<script src="dependencies/popper.js/popper.min.js"></script>
+	<script src="dependencies/jquery/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<script src="dependencies/bootstrap/js/bootstrap.min.js"></script>
+	<script src="dependencies/swiper/js/swiper.jquery.min.js"></script>
+	<script src="dependencies/swiperRunner/js/swiperRunner.min.js"></script>
+	<script src="assets/js/TweenMax.min.js"></script>
+	<script src="dependencies/wavify/jquery.wavify.js"></script>
+	<script src="dependencies/jquery.parallax-scroll/jquery.parallax-scroll.js"></script>
+	<script src="dependencies/countUp.js/countUp.min.js"></script>
+	<script src="dependencies/jquery.appear/jquery.appear.js"></script>
+	<script src="dependencies/wow/js/wow.min.js"></script>
+	<script src="dependencies/raindrops/js/raindrops.js"></script>
+	<script src="dependencies/slick-carousel/js/slick.js"></script>
+	<script src="dependencies/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+	<script src="dependencies/parallax/js/jquery.parallax.min.js"></script>
+	<script src="assets/js/SmoothScroll.min.js"></script>
+	<script src="dependencies/gmap3/js/gmap3.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAssaWBjq7xp_L88KSNA6X7wVA-HxF9rtM"></script>
+
+	<!-- Site Scripts -->
+	<script src="assets/js/app.js"></script>
+
+</body>
+
 </html>
